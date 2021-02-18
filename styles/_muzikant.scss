@@ -1,0 +1,58 @@
+.muzikant {
+    display: grid;
+    height: 500px;
+    max-width: 400px;
+    grid-template: 50% 50% / 1fr;
+    border: solid 5px red;
+    border-radius: 20px;
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 15px 2px grey;
+    &__boven {
+      background-color: yellow;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      margin: 0;
+      padding-top: 40px;
+      &--foto {
+        border: solid 5px red;
+        border-radius: 50%;
+        width: 150px;
+        transform: translateY(70px);
+      }
+      &--naam {
+        font-size: 50px;
+        font-family: "Fredoka One", cursive;
+        margin: 0;
+      }
+    }
+    &__onder {
+      background-color: green;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding-top: 100px;
+      margin: 0;
+      &--tekst {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      &--instrument {
+        font-family: "Long Cang", cursive;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .muzikant:hover {
+      border: solid 5px black;
+      background-color: black;
+      border-radius: 20px;
+      transition-property: all;
+      transition-duration: 2000ms;
+      .muzikant__boven,
+      .muzikant__onder {
+          display: none;
+      }
+  }

@@ -1,0 +1,78 @@
+.muzikant {
+  display: -ms-grid;
+  display: grid;
+  height: 500px;
+  max-width: 400px;
+  -ms-grid-rows: 50% 50%;
+  -ms-grid-columns: 1fr;
+      grid-template: 50% 50% / 1fr;
+  border: solid 5px red;
+  border-radius: 20px;
+  padding: 0;
+  margin: 20px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 15px 2px grey;
+          box-shadow: 2px 2px 15px 2px grey;
+}
+
+.muzikant__boven {
+  background-color: yellow;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.muzikant__boven--foto {
+  border: solid 5px red;
+  border-radius: 50%;
+  width: 150px;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+}
+
+.muzikant__boven--naam {
+  font-size: 50px;
+  font-family: "Fredoka One", cursive;
+  margin: 0;
+}
+
+.muzikant__onder {
+  background-color: green;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-top: 100px;
+  margin: 0;
+}
+
+.muzikant__onder--tekst {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.muzikant__onder--instrument {
+  font-family: "Long Cang", cursive;
+  font-size: 40px;
+}
+
+.muzikant:hover {
+  border: solid 5px black;
+  background-color: black;
+  border-radius: 20px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+}
+
+.muzikant:hover .muzikant__boven,
+.muzikant:hover .muzikant__onder {
+  display: none;
+}
+
+body {
+  background-color: #c3cfe2;
+  color: black;
+}
+/*# sourceMappingURL=styles.css.map */
