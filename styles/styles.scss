@@ -1,0 +1,49 @@
+body {
+  background-color: #c3cfe2;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 600px;
+}
+
+li {
+    border: none;
+    margin: 0;
+    padding: 10px;
+    width: 300px;
+    grid-column-start: -1;
+    transition-duration: 2000ms;
+    transition: transform;
+}
+
+
+
+li:hover {
+      transform: translateX(-100px);
+}
+
+.blog {
+    background-color: #e17b77;
+}
+
+.twitter {
+    background-color: #00aced;
+}
+
+.linkedin {
+    background-color: #007bb6;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.github {
+    background-color: #333333;
+}
